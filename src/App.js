@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import Form from 'react-bootstrap/Form';
 import './App.css';
 import Nav from './containers/Nav';
 
@@ -20,13 +21,6 @@ function App() {
           Learn React          
         </a>
 
-        <div className="row">
-          <div className="col-3">            
-            <label>Enter your name</label>
-            <input type="text" className="form-control"></input>        
-          </div>
-        </div>
-        
         <Nav />
       </header>
     </div>
