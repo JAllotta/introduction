@@ -17,8 +17,16 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React ZACH!!!
+          Learn React          
         </a>
+
+        <div className="row">
+          <div className="col-3">            
+            <label>Enter your name</label>
+            <input type="text" className="form-control"></input>        
+          </div>
+        </div>
+        
         <Nav />
       </header>
     </div>
