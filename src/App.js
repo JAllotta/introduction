@@ -17,9 +17,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React ZACH!!!
         </a>
-        <Nav/>
+        <Nav />
       </header>
     </div>
   );
