@@ -1,37 +1,44 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Navigation from './containers/Navigation';
 import Something from './components/Something';
 
-import { Navbar } from './components/Navbar';
+import { Navigatebar } from './components/Navigatebar';
 import { Wrapper } from './components/Wrapper';
 import { useRoutes } from 'hookrouter';
 
 import { Home } from './pages/Home';
-import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { NotFound } from './pages/NotFound';
+import { About } from './pages/About';
+import { Career } from './pages/Career';
+
+import BackgroundImage from './assets/images/background.jpg';
 
 
 const routes = {
-  '/': () => <Home/>,
-  '/about*': () => <About/>,
-  '/contact/:name': ({ name }) => <Contact name={name} />,
+  // '/': () => <Home/>,
+  // '/about*': () => <About/>,
+  '/': () => <About/>,
+  '/About': () => <About/>,
+  '/Career': () => <Career/>,
+  // '/contact/:name': ({ name }) => <Contact name={name} />,
+  '/contact': () => <Contact/>
 }
 
 function App() {
   const match = useRoutes(routes);
   return (
     <div className="App">      
-      <Navigation />      
+      {/* <img src={BackgroundImage} className="profile-img" alt="Julian Allotta"></img>  */}
+      
       <Wrapper>
-        <Navbar />
+        <Navigatebar />
         {match || <NotFound />}
       </Wrapper>
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/* <p>
+        <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -41,9 +48,9 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React          
-        </a> */}
+        </a>
         <Something></Something>
-      </header>
+      </header> */}
     </div>
   );
 }

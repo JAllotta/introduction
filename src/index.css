@@ -1,4 +1,10 @@
 body {
+  
+  background-image: url('./assets/images/background.jpg');
+  background-position: center;
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +16,79 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.flex-container {    
+  display: flex;   
+  justify-content: space-between;  
+} 
+
+.flex-container .item {    
+  flex-basis: 100%;  
+}
+
+.profile-img {  
+  margin-top: 5%;
+  max-width: 50%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.profile-caption {
+  margin: 3%;
+}
+
+.grid-container {
+  margin: 5%;
+  display: grid;
+  grid-gap: 2%;
+  /* grid-gap: 10px; */
+  grid-template-areas:
+    /* 'header header header header header header' */
+    'menu2 main2 main2 main2 main2 main2'
+    /* 'footer footer footer footer footer'; */
+}
+
+.grid-container .left-panel {
+  /* grid-row: 1 / 4;
+  grid-column: 1; */
+  grid-area: menu2;
+  background-color: white;
+  border-radius: 5px;  
+  max-width: 350px;
+}
+
+.right-panel {
+  /* grid-column: 2 / 12; */
+  grid-area: main2;
+  background-color: white;
+  border-radius: 5px;  
+  justify-content: right;
+  /* width: 1350px; */
+  /* max-width: 1350px; */
+}
+
+.content-title {
+  margin-top: 3%;
+}
+
+.content-panel {  
+  margin: 3%;
+  font-size: larger;
+}
+
+.section-title {  
+  text-align: left;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+
+.list {
+  font-size: medium;
+  text-align: left;
+}
+
+.indent-it {
+  margin-left: 10px;
 }
