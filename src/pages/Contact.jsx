@@ -3,8 +3,7 @@ import { Page } from '../components/Page';
 
 export const Contact = ({ name }) => {
     return (
-        <Page title="Contact">            
-            {/* <p>{name}</p> */}
+        <Page title="Contact">   
             <p>
                 <strong>E-Mail:</strong>
                 <span className="indent-it">jallotta64@gmail.com</span>
