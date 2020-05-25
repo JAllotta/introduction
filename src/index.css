@@ -1,8 +1,8 @@
 body {
-  
-  background-image: url('./assets/images/background.jpg');
+  background-color: #27496d !important;
+  /* background-image: url('./assets/images/background.jpg'); */
   background-position: center;  
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;   
   background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -26,7 +26,7 @@ code {
   flex-basis: 100%;  
 }
 
-.profile-img {  
+.left-panel .profile-img {  
   margin-top: 5%;
   max-width: 50%;
   height: auto;
@@ -35,6 +35,112 @@ code {
 
 .profile-caption {
   margin: 3%;
+}
+
+.home-grid-container .profile-img { 
+  /* margin-top: 5%; */
+  max-width: 300px;
+  /* height: auto; */
+  border-radius: 5px;
+  /* align-self: center; */
+}
+
+.home-title {
+  /* display: inline; */
+  /* text-align: center;
+  align-content: center;
+  justify-content: center; */
+  /* place-content: center; */
+  align-self: center;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+}
+.home-p {
+  align-self: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: aliceblue;
+}
+.home-grid-container .item {
+  background-color: gray;
+  border-radius: 5px;
+  justify-content: center;  
+  display: flex;
+  cursor: pointer;
+}
+.home-grid-container .item:hover {  
+  background-color: #142850;
+}
+
+.home-grid-container {  
+  margin: 1%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+  /* margin-top: 1%;
+  margin-bottom: 3%;
+  margin-left: 1%;
+  margin-right: 3%; */
+  display: grid;
+  grid-gap: 1%;
+  height: 100vh;
+  width: 100vw;
+  /* max-width:98%;
+  max-height:50%; */
+  /* justify-content: stretch; */
+  /* grid-template-rows: 80px 200px; */
+  grid-template-columns: auto auto auto;
+  /* justify-items: stretch;
+  align-content: stretch;   */
+  /* grid-gap: 10px; */
+  /* grid-template-areas:
+    'profileImg profileImg item1 item1 item2 item2'
+    'profileImg profileImg item4 item4 item5 item5 '
+    'item6 item6 item6 item6 item6 item6';    */
+  
+} 
+/* .home-grid-container > div {  
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} */
+.home-grid-container .itemImg {
+  /* grid-area: profileImg; */
+  /* grid-column: 2;
+  grid-row: 1; */
+  display: flex;
+  justify-content: center;
+}
+.home-grid-container .item1 {  
+  /* grid-area: item1; */
+
+  background-color: #0c7b93;
+  /* grid-column: 1;
+  grid-row: 1; */
+}
+.home-grid-container .item2 {
+  /* grid-area: item2; */
+   background-color: #00a8cc;
+  /* grid-column: 3;
+  grid-row: 1; */
+}
+.home-grid-container .item3 {
+  /* grid-area: item3; */
+  /* grid-column: 1;
+  grid-row: 2; */
+}
+.home-grid-container .item4 {
+  /* grid-area: item4; */
+   background-color: #00a8cc;
+  /* grid-column: 2;
+  grid-row: 2; */
+}
+.home-grid-container .item5 {
+  /* grid-area: item5; */
+   background-color: #0c7b93;
+  /* grid-column: 3;
+  grid-row: 2; */
 }
 
 .grid-container {
