@@ -9,11 +9,13 @@ import { Contact } from './pages/Contact';
 import { NotFound } from './pages/NotFound';
 import { About } from './pages/About';
 import { Career } from './pages/Career';
+import { Hobbies } from './pages/Hobbies';
 
 const routes = {
   '/': () => <About/>,
   '/About': () => <About/>,
   '/Career': () => <Career/>,
+  '/Hobbies': () => <Hobbies/>,
   '/contact': () => <Contact/>
 }
 

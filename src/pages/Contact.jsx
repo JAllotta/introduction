@@ -10,7 +10,7 @@ export const Contact = ({ name }) => {
             </p>
             <p>
                 <strong>LinkedIn:</strong> 
-                <a  className="indent-it" href={"https://www.linkedin.com/in/julianallotta/"}>https://www.linkedin.com/in/julianallotta/</a>
+                <a  className="indent-it" target="_blank" href={"https://www.linkedin.com/in/julianallotta/"}>https://www.linkedin.com/in/julianallotta/</a>
             </p>
         </Page>
     )
