@@ -32,7 +32,7 @@ function App() {
   // if (path === '/') {
   //   return <Home />;
   // }
-  var currentPage = "nav-link-current";
+  // var currentPage = "nav-link-current";
   
   // var Scroll = require('react-scroll');
   // var scroll = Scroll.animateScroll;
