@@ -1,5 +1,11 @@
+/* 
+
+html {
+  scroll-behavior: smooth;
+} */
 body {
   background-color: #27496d !important;
+  overflow: hidden;
   /* background-image: url('./assets/images/background.jpg'); */
   background-position: center;  
   background-repeat: no-repeat;   
@@ -24,13 +30,6 @@ code {
 
 .flex-container .item {    
   flex-basis: 100%;  
-}
-
-.left-panel .profile-img {  
-  margin-top: 5%;
-  max-width: 50%;
-  height: auto;
-  border-radius: 5px;
 }
 
 .profile-caption {
@@ -197,3 +196,67 @@ code {
 .indent-it {
   margin-left: 10px;
 }
+
+
+/****** Navbar *******/
+.nav-link {
+  color: #27496d;
+  font-size: large;
+  font-weight: bold;
+}
+
+.active {
+  color: #00a8cc !important;
+  font-size: x-large !important;
+}
+
+/****** med-gen *******/
+.med-container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+}
+
+.med-menu {
+  background-color: white;
+  margin: 10%;
+  padding-top: 50%;
+  border-radius: 5px; 
+}
+
+.med-body {
+  overflow-y: scroll;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.profile-img {    
+  margin-top: 5%;
+  margin-bottom: 10%;
+  max-width: 90%;
+  max-height: 300px;
+  height: auto;
+  border-radius: 25px;
+}
+
+/**** Page Content *****/
+.page {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.page-title {
+  margin-top: 3%;
+  padding-top: 1%;
+  text-align: center;
+  font-size: xx-large;
+} 
+
+.page-content {  
+  padding: 3%;
+  font-size: larger;
+}
+

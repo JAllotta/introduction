@@ -4,7 +4,7 @@ import { Page } from '../components/Page';
 export const Career = () => {
     return (
         <Page title="Career">
-            <div>
+            <div> 
                 <h3>General Atomics ASI</h3>
 
                 <div className="section-title">Role</div>
@@ -104,7 +104,7 @@ export const Career = () => {
                     <li>Was a key player in researching and documenting our migration from classic ASP using VBScript to ASP.NET and C# using Visual Studio and Team Foundation Server for versioning.</li>
                     <li>Collaborate with Business Analysts by reviewing user stories to plan and estimate a project’s level of effort.</li>
                 </ul>
-
+                
                 <hr />
             </div>
         </Page>
