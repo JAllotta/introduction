@@ -200,14 +200,15 @@ code {
 
 /****** Navbar *******/
 .nav-link {
-  color: #27496d;
-  font-size: large;
+  /* color: #27496d; */
+  font-size: x-large;
   font-weight: bold;
+  color: white;
 }
 
 .active {
   color: #00a8cc !important;
-  font-size: x-large !important;
+  font-size: xx-large !important;
 }
 
 /****** med-gen *******/
@@ -221,10 +222,11 @@ code {
 }
 
 .med-menu {
-  background-color: white;
+  /* background-color: white; */
   margin: 10%;
-  padding-top: 50%;
+  /* padding-top: 50%; */
   border-radius: 5px; 
+  color: white;
 }
 
 .med-body {
